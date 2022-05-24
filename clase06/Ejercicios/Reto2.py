@@ -14,25 +14,82 @@ datos = {
   "id_cliente": int, 
   "nombre": str, 
   "edad": int, 
-  "Atracción": str,
-  "Apto_Cliente": bool,
   "primer_ingreso": bool,
-  "Total_Boleta": Total_boleta  
+}
+#print(datos)
+#datos["id_cliente"]="00100"
+#datos["nombre"]="Robertinho"
+#print(datos)
+
+
+
+
+
+datos["id_cliente"] ="00100"
+datos["nombre"] ="Tatiana Ruiz"
+datos["edad"] =7
+datos["primer_ingreso"] = False
+#NOTA1: IMPORTANTE: NO ES NECESARIO CREAR UN SEGUNDO DICCIONARIO SE PUEDE USAR EL PRIMERO Y SE VAN AGREGANDO LOS ELEMENTOS
+#QUE NO ESTAN DEFINIDOS INICIALMENTE COOMO SON: APTO Y TOTAL BOLETA
+
+
+#Definición diccionario de salida(NO ES NECESARIO SE PUEDE USAR EL PRIMERO Y AGREGAR ELEMENTOS, VER NOTA1)
+Diccionario ={
+  "nombre": datos["nombre"],
+  "edad": datos["edad"],
+  "atraccion": str,
+  "apto": bool, 
+  "primer_ingreso": datos["primer_ingreso"],
+  "Total_boleta": int,
+  
+
 }
 
-#datos["id_cliente"] = "100121"
-#print (datos)
 
 
-def aventuras_extremas(datos: dict):
-  if (datos["edad"]) >= 7:
-    datos["Apto_Cliente"] = True
+#Definir condiciones!!!!
 
-  else:
-    datos["Apto_Cliente"] = False
-    datos["Atracción"] = "N/A"
-    datos["Total_boleta"] = "N/A"
-  if 
+
+if (datos["edad"]) >= 7:
+  Diccionario["apto"] = True
+else: 
+  Diccionario["apto"] = False 
+  
+if (datos["edad"]) < 7:
+  Diccionario["atraccion"] = "N/A"
+  Diccionario["Total_boleta"] = "N/A"
+
+if datos["primer_ingreso"] == True and datos["edad"] >18:
+  Diccionario["Total_boleta"] = 20000 -1000
+  Diccionario["atraccion"] = "X-Treme"
+elif datos["primer_ingreso"] ==False and datos["edad"] >18:
+  Diccionario["Total_boleta"] = 20000
+  Diccionario["atraccion"] = "X-Treme"
+  
+if datos["edad"] >= 15 and datos["edad"] <= 18 and datos["primer_ingreso"] ==True:
+  Diccionario["Total_boleta"] = 5000 -350
+  Diccionario["atraccion"] = "Carros chocones"
+elif datos["primer_ingreso"] ==False and datos["edad"] >= 15 and datos["edad"] <= 18:
+  Diccionario["Total_boleta"] = 5000
+  Diccionario["atraccion"] = "Carros chocones"
+
+if datos["primer_ingreso"] ==True and datos["edad"] >= 7 and datos["edad"] < 15:
+  Diccionario["Total_boleta"] = 10000 -500
+  Diccionario["atraccion"] = "Sillas voladoras"
+elif datos["primer_ingreso"] ==False and datos["edad"] >= 7 and datos["edad"] < 15:
+  Diccionario["Total_boleta"] = 10000
+  Diccionario["atraccion"] = "Sillas voladoras"
+
+
+print(Diccionario)
+ 
+  
+  
+
+ 
+  
+  
+
 
   
 
