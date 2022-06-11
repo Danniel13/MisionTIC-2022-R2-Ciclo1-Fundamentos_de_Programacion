@@ -143,4 +143,17 @@ Materiales de estudio del Ciclo 1 de la Ruta 2 de MisiónTIC 2022
 * Conceptos del lenguaje Python
   * POO - Programación Orientada a Objetos (iMaster)
     * [Workshop POO](clase17/poo.ipynb)
+    * [Ejemplo](clase17/ejemplo.ipynb)
   * [Errores y excepciones](clase17/excepciones.ipynb)
+
+### Clase 18
+* Conceptos del lenguaje Python
+  * [Trabajando gráficas](clase18/turtle.ipynb)
+    * [main.py](clase18/turtle/main.py)
+    * [vista.py](clase18/turtle/vista.py)
+    * [controlador.py](clase18/turtle/controlador.py)
+  * [Interfaz gráfica de usuario](clase18/tkinter.ipynb)
+    * [main.py](clase18/crud/main.py)
+    * [modelo.py](clase18/crud/modelo.py)
+    * [vista.py](clase18/crud/vista.py)
+    * [controlador.py](clase18/crud/controlador.py)
